@@ -1,7 +1,7 @@
 # CoSpace
 building an opensource collaborationtool for everyone: decentralizing productivity
 
-The goal of this project is to create a platform which makes global collaboration possible. 
+The goal of this project is to create a platform which makes global collaboration possible. <br>
 This task is not easy and will ask for a lot of passion! 
  
 My belief is that humans are naturally active, they don’t need the push of others to get out of bed and do what they like to do. However, if you know you will be forced to do something you don’t like, you won’t get out of bed that easy. 
