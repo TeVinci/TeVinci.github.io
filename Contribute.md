@@ -1,4 +1,4 @@
-<h4>First thank you for taking into consideration to contribute to that project.</h4> <br>
+<h4>First thank you for taking into consideration to contribute to that project.</h4>
 <h6>Only with people like you we will be able to success in such a big project.</h6> 
 <br><br>
 
