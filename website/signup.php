@@ -2,14 +2,8 @@
 <?php
 include 'outerheader.php';
 
-$dbServername = "localhost";
-$dbUsername = "root";
-$dbPassword = "";
-$dbName = "cospace_login";
+include_once 'inc/dbh.inc.php';
 
-$conn = mysqli_connect($dbServername, $dbUsername, $dbPassword, $dbName);
-
-mysqli_select_db($conn, "dropdown_passion");
 ?>
 
 <section class='main-container'>
@@ -22,7 +16,7 @@ mysqli_select_db($conn, "dropdown_passion");
 			
 		</div>
 <br>
-		<form class='signup-form' action='inc/signup.inc.php' method='POST'>
+		<form class='signup-form' action='http://tevinci1.cmshost.nl/inc/signup.inc.php' method='POST'>
 			<input type='text' name='uid' placeholder='your new Identity'>
 			<input type='text' name='name' placeholder='your Name'>
 			<div class="dropdown-wrapper">
@@ -31,12 +25,12 @@ mysqli_select_db($conn, "dropdown_passion");
 					<option>please select a passion category
 					</option>
 					<?php
-						$res=mysqli_query($conn, "select * from dropdown_passion ORDER BY passion_cat");
+						$res=mysqli_query($conn, "select * from passion_maincat");
 						while($row=mysqli_fetch_array($res))
 						{
 					?>
 					
-					<option value="<?php echo $row['passion_cat']; ?>"><?php echo $row["passion_cat"]; ?>
+					<option value="<?php echo $row['passionmain_name']; ?>"><?php echo $row["passionmain_name"]; ?>
 					</option>
 					<?php
 						}
@@ -48,12 +42,12 @@ mysqli_select_db($conn, "dropdown_passion");
 					<option>please select a passion category
 					</option>
 					<?php
-						$res=mysqli_query($conn, "select * from dropdown_passion ORDER BY passion_cat");
+						$res=mysqli_query($conn, "select * from passion_maincat ORDER BY passion_cat");
 						while($row=mysqli_fetch_array($res))
 						{
 					?>
 					<option>
-					<?php echo $row["passion_cat"];?>
+					<?php echo $row["passionmain_name"];?>
 					</option>
 					<?php } ?>
 				</select>
@@ -63,12 +57,12 @@ mysqli_select_db($conn, "dropdown_passion");
 					<option>please select a passion category
 					</option>
 					<?php
-						$res=mysqli_query($conn, "select * from dropdown_passion ORDER BY passion_cat");
+						$res=mysqli_query($conn, "select * from passion_maincat ORDER BY passion_cat");
 						while($row=mysqli_fetch_array($res))
 						{
 					?>
 					
-					<option><?php echo $row["passion_cat"]; ?>
+					<option><?php echo $row["passionmain_name"]; ?>
 					</option>
 					<?php
 						}
