@@ -4,7 +4,8 @@ building an opensource collaborationtool for everyone: decentralizing productivi
 The goal of this project is to create a platform which makes global collaboration possible. <br>
 This task is not easy and will ask for a lot of passion! 
 
-<h4>please also see: http://tevinci1.cmshost.nl/ and https://tevinci.github.io/</h4>
+<h4>please also see: http://tevinci1.cmshost.nl/ for the online site 
+and https://tevinci.github.io/ for a more detailed discription of what to do.</h4>
 
 
 My belief is that humans are naturally active, they don’t need the push of others to get out of bed and do what they like to do. However, if you know you will be forced to do something you don’t like, you won’t get out of bed that easy. 
