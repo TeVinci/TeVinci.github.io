@@ -1,6 +1,6 @@
 <h4>First thank you for taking into consideration to contribute to that project.</h4>
 <h6>Only with people like you we will be able to success in such a big project.</h6> 
-<br><br>
+<br>
 
 The platform which will be created here is ment to belong to any user, that means, any contributer will have the same influence on the project.<br> 
 Thus, if you want to be creative and share youre ideas, please do so!!!
