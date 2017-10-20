@@ -2,10 +2,10 @@
 <h6>Only with people like you we will be able to success in such a big project.</h6> 
 <br>
 
-The platform which will be created here is ment to belong to the users, that means: any contributer will have the same influence on the project.<br> 
-Thus, if you want to be creative and share youre ideas, please do so!!!
+The platform which will be created here is ment to belong to it's users, that means: any contributer will have the same influence on the project.<br> 
+<h5>Thus, if you want to be creative and share youre ideas, please do so!!!</h5>
 
-Currently we are working on the following main tasks
+<h3>Currently we are working on the following main tasks</h3>
 
 Developing Forms:
 - project creation form
