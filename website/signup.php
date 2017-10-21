@@ -16,7 +16,7 @@ include_once 'inc/dbh.inc.php';
 			
 		</div>
 <br>
-		<form class='signup-form' action='http://tevinci1.cmshost.nl/inc/signup.inc.php' method='POST'>
+		<form class='signup-form' action='inc/signup.inc.php' method='POST'>
 			<input type='text' name='uid' placeholder='your new Identity'>
 			<input type='text' name='name' placeholder='your Name'>
 			<div class="dropdown-wrapper">
@@ -25,12 +25,12 @@ include_once 'inc/dbh.inc.php';
 					<option>please select a passion category
 					</option>
 					<?php
-						$res=mysqli_query($conn, "select * from passion_maincat");
+						$res=mysqli_query($conn, "select passionmain_name from passion_maincat");
 						while($row=mysqli_fetch_array($res))
 						{
 					?>
 					
-					<option value="<?php echo $row['passionmain_name']; ?>"><?php echo $row["passionmain_name"]; ?>
+					<option value="<?php echo $row ['passionmain_name'] ; ?>"><?php echo $row ['passionmain_name']; ?>
 					</option>
 					<?php
 						}
@@ -42,11 +42,11 @@ include_once 'inc/dbh.inc.php';
 					<option>please select a passion category
 					</option>
 					<?php
-						$res=mysqli_query($conn, "select * from passion_maincat ORDER BY passion_cat");
+						$res=mysqli_query($conn, "select passionmain_name from passion_maincat");
 						while($row=mysqli_fetch_array($res))
 						{
 					?>
-					<option>
+					<option value="<?php echo $row ['passionmain_name'] ; ?>">
 					<?php echo $row["passionmain_name"];?>
 					</option>
 					<?php } ?>
@@ -57,12 +57,12 @@ include_once 'inc/dbh.inc.php';
 					<option>please select a passion category
 					</option>
 					<?php
-						$res=mysqli_query($conn, "select * from passion_maincat ORDER BY passion_cat");
+						$res=mysqli_query($conn, "select passionmain_name from passion_maincat");
 						while($row=mysqli_fetch_array($res))
 						{
 					?>
 					
-					<option><?php echo $row["passionmain_name"]; ?>
+					<option value="<?php echo $row ['passionmain_name'] ; ?>"><?php echo $row["passionmain_name"]; ?>
 					</option>
 					<?php
 						}

@@ -2,7 +2,7 @@
 	session_start();
 	include '../inc/dbh.inc.php';
 	
-	if (isset($_SESSION['u_id'])) {
+	if (isset($_SESSION['user_id'])) {
 
 ?>
 <!DOCTYPE html>

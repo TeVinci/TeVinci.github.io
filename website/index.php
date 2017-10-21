@@ -8,6 +8,7 @@ include 'outerheader.php';
 			<a href="signup.php"><h2>SignUp</h2></a>
 		</div>
 	</div>
+	
 
 
 <?php

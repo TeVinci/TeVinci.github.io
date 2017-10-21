@@ -15,7 +15,7 @@ if (isset($_POST['submit'])) {
 		exit();
 	//check if uid exists
 	} else {
-		$sql = "SELECT * FROM users WHERE user_uid='$uid'";
+		$sql = "SELECT * FROM user WHERE user_uid='$uid'";
 		$result = mysqli_query($conn, $sql);
 		$resultCheck = mysqli_num_rows($result);
 		if ($resultCheck < 1) {
@@ -30,12 +30,11 @@ if (isset($_POST['submit'])) {
 					exit();
 				} elseif ($hashedPwdCheck == true) {
 					//LogIn user
-					$_SESSION['u_id'] = $row['user_id'];
-					$_SESSION['u_uid'] = $row['user_uid'];
-					$_SESSION['u_age'] = $row['user_age'];
-					$_SESSION['u_des'] = $row['user_des'];
-					$_SESSION['u_id'] = $row['user_id'];
-					$_SESSION['u_passion'] = $row['user_passion'];
+					$_SESSION['user_id'] = $row['user_id'];
+					$_SESSION['user_uid'] = $row['user_uid'];
+					$_SESSION['user_name'] = $row['user_name'];
+					$_SESSION['user_img'] = $row['user_img'];
+					$_SESSION['user_signupdate'] = $row['user_signupdate'];
 					header("Location: ../innerpages/MyHome.php?login=success");
 					exit();
 				} else {
