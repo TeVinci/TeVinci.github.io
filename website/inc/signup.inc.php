@@ -61,7 +61,7 @@ if (isset($_POST['submit'])) {
 				// insert into database
 				$sql = "INSERT INTO user (user_uid, user_name, user_passion1, user_passion2, user_passion3, user_pwd, user_signupdate) VALUES ('$uid', '$name', '$passion_cat1', '$passion_cat2', '$passion_cat3', '$hashedPwd', '$date');";
 					mysqli_query($conn, $sql);
-					header ("Location: ../signup.php?signup=success");
+					header ("Location: ../signup2.php?signup=success");
 					}
 				
 			
