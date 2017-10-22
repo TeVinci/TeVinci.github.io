@@ -45,7 +45,7 @@
 			<div class="mymenu">
 				<ul>
 					<li>
-						<a href="#">My Messages</a>
+						<a href="../innerpages/message.php">My Messages</a>
 					</li>
 					<li>
 						<a href="#">My Projects</a>

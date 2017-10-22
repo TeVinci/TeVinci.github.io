@@ -1,8 +1,9 @@
 <?php
 
-$dbServername = "localhost";
+$dbServername = "Localhost";
 $dbUsername = "root";
 $dbPassword = "";
-$dbName = "cospace_login";
+$dbName = "CoSpace";
 
 $conn = mysqli_connect($dbServername, $dbUsername, $dbPassword, $dbName);
+

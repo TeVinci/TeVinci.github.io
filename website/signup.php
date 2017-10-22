@@ -22,15 +22,15 @@ include_once 'inc/dbh.inc.php';
 			<div class="dropdown-wrapper">
 				
 				<select class="dropdown_cat" name='passion_cat1' id="passion_cat1">
-					<option>please select a passion category
+					<option>please select a passion
 					</option>
 					<?php
-						$res=mysqli_query($conn, "select passionmain_name from passion_maincat");
+						$res=mysqli_query($conn, "select * from passion_maincat");
 						while($row=mysqli_fetch_array($res))
 						{
 					?>
 					
-					<option value="<?php echo $row ['passionmain_name'] ; ?>"><?php echo $row ['passionmain_name']; ?>
+					<option value="<?php echo $row ['passionmain_name']; ?>"><?php echo $row ['passionmain_name']; ?>
 					</option>
 					<?php
 						}
@@ -39,14 +39,14 @@ include_once 'inc/dbh.inc.php';
 				<br><br>
 				
 				<select class="dropdown_cat" name='passion_cat2' id="passion_cat2">
-					<option>please select a passion category
+					<option>please select a passion
 					</option>
 					<?php
-						$res=mysqli_query($conn, "select passionmain_name from passion_maincat");
+						$res=mysqli_query($conn, "select * from passion_maincat");
 						while($row=mysqli_fetch_array($res))
 						{
 					?>
-					<option value="<?php echo $row ['passionmain_name'] ; ?>">
+					<option>
 					<?php echo $row["passionmain_name"];?>
 					</option>
 					<?php } ?>
@@ -54,15 +54,15 @@ include_once 'inc/dbh.inc.php';
 				<br><br>
 				
 				<select class="dropdown_cat" name='passion_cat3' id="passion_cat3">
-					<option>please select a passion category
+					<option>please select a passion
 					</option>
 					<?php
-						$res=mysqli_query($conn, "select passionmain_name from passion_maincat");
+						$res=mysqli_query($conn, "select * from passion_maincat");
 						while($row=mysqli_fetch_array($res))
 						{
 					?>
 					
-					<option value="<?php echo $row ['passionmain_name'] ; ?>"><?php echo $row["passionmain_name"]; ?>
+					<option><?php echo $row["passionmain_name"]; ?>
 					</option>
 					<?php
 						}
@@ -92,7 +92,7 @@ include_once 'inc/dbh.inc.php';
 			<h4>Your new Identity</h4>
 <br>
 			<p><span>Be creative!</span><br>
-			This will be your unique identity, other users can find your profile using this identity.
+			This will be your unique identity, other users can find you by this identity.
 			</p>
 <br>
 			<h4>Your name</h4><br>
@@ -100,10 +100,10 @@ include_once 'inc/dbh.inc.php';
 			</p>
 <br>
 			<h4>Your passion</h4><br>
-			<p>Please select at least one category you would like to see projects on. <br>
-			Here you will just need to indicate a general category, but as soon as you are logged in, you will be able to further specify your passions.<br>
-			We are sorry for the small ammount of options, but when you are logged in, you can add whatever passion you like to that list.<br>
-			<span>just select at least one category for now.</span>
+			<p>Please select at least one Passion you would like to see projects on. <br>
+			Here you will just need to indicate a general category, but as soon as you are logged in, you will be able to further specify this.<br>
+			We are sorry for the small ammount of options, but this list will continiously grow as users can add new passions.<br>
+			<span>just select at least one for now.</span>
 
 			</p>
 <br>
@@ -113,10 +113,11 @@ include_once 'inc/dbh.inc.php';
 			</p>
 <br>
 			<h4>Password</h4><br>
-			<p>You know this stuff ;)</p><br>
-			<span>Just use at least 6 characters</span><br><p>
+			<p>You know this stuff ;)</p>
+			<p>
 			Sorry, but we cannot protect your password from being guessed, so please do not make it too easy. <br>
 			</p>
+			<span>Just use at least 6 characters</span>
 		</div>
 	</div>
 	
