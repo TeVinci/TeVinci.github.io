@@ -19,6 +19,59 @@ include_once 'inc/dbh.inc.php';
 		<form class='signup-form' action='inc/signup.inc.php' method='POST'>
 			<input type='text' name='uid' placeholder='your new Identity'>
 			<input type='text' name='name' placeholder='your Name'>
+			<div class="dropdown-wrapper">
+			
+			<select class="dropdown_cat" name='passion_cat1' id="passion1">
+				<option>please select a passion
+				</option>
+				<?php
+					$res=mysqli_query($conn, "select * from passion_maincat");
+					while($row=mysqli_fetch_array($res))
+					{
+				?>
+				
+				<option value="<?php echo $row ['passionmain_name']; ?>"><?php echo $row ['passionmain_name']; ?>
+				</option>
+				<?php
+					}
+				?>
+			</select>
+			<br><br>
+			
+			<select class="dropdown_cat" name='passion_cat2' id="passion2">
+				<option>please select a passion
+				</option>
+				<?php
+					$res=mysqli_query($conn, "select * from passion_maincat");
+					while($row=mysqli_fetch_array($res))
+					{
+				?>
+				<option>
+				<?php echo $row["passionmain_name"];?>
+				</option>
+				<?php } ?>
+			</select>
+			<br><br>
+			
+			<select class="dropdown_cat" name='passion_cat3' id="passion3">
+				<option>please select a passion
+				</option>
+				<?php
+					$res=mysqli_query($conn, "select * from passion_maincat");
+					while($row=mysqli_fetch_array($res))
+					{
+				?>
+				
+				<option><?php echo $row["passionmain_name"]; ?>
+				</option>
+				<?php
+					}
+				?>
+				
+				
+			</select>
+				
+			</div>
 			<input type='text' name='Location' placeholder='Location'>
 			<input type='password' name='pwd' placeholder='Password (min. 6 characters)'>
 			<input type='password' name='conpwd' placeholder='Confirm Password'>

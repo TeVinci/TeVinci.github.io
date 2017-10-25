@@ -17,28 +17,43 @@
 </head>
 <body>
 	<div class="header">
-		<div class="nav">
+		<div class="logout">
+			<form action='../inc/logout.inc.php' method='POST' id='logout'>
+				<button type='submit' name ='submit'>Logout</button>
+			</form>
+		</div>
+		<nav>
 			<ul>
-				<li>
-					<a href="myhome.php">Home</a>
-				</li>
-				<li>
-					<a href="projects.php">Projects</a>
-				</li>
-				<li>
-					<a href="knowledgebase.php">Knowledge base</a>
-				</li>
-				<li>
-					<a href="discussionboard.php">Discussion board</a>
-				</li>
-				<li>
-					<a href="learningspace.php">Learning space</a>
-				</li>
-				<li>
-					<a href="gallery.php">Gallery</a>
+				<li id="Menu"> 
+					<div class="hamburger-wrapper">
+						<div class="hamburger"><a href="#"></a></div>
+						<div class="hamburger"><a href="#"></a></div>
+						<div class="hamburger"><a href="#"></a></div>
+					</div>
+			
+					<ul class="headernav">
+						<li>
+							<a href="myhome.php">Home</a>
+						</li>
+						<li>
+							<a href="projects.php">Projects</a>
+						</li>
+						<li>
+							<a href="knowledgebase.php">Knowledge base</a>
+						</li>
+						<li>
+							<a href="discussionboard.php">Discussion board</a>
+						</li>
+						<li>
+							<a href="learningspace.php">Learning space</a>
+						</li>
+						<li>
+							<a href="gallery.php">Gallery</a>
+						</li>
+					</ul>
 				</li>
 			</ul>
-		</div>
+		</nav>
 	</div>
 	<div class="2ndheader">
 		<div class="mywrapper">
@@ -61,11 +76,6 @@
 					</li>
 				</ul>
 			</div>
-		</div>
-		<div class="logout">
-			<form action='../inc/logout.inc.php' method='POST' id='logout'>
-				<button type='submit' name ='submit'>Logout</button>
-			</form>
 		</div>
 	</div>
 	
