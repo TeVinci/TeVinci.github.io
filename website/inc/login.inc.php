@@ -35,7 +35,7 @@ if (isset($_POST['submit'])) {
 					$_SESSION['user_name'] = $row['user_name'];
 					$_SESSION['user_img'] = $row['user_img'];
 					$_SESSION['user_signupdate'] = $row['user_signupdate'];
-					header("Location: ../innerpages/MyHome.php?login=success");
+					header("Location: ../innerpages/Home.php?login=success");
 					exit();
 				} else {
 					header("Location: ../index.php?login=empty");
