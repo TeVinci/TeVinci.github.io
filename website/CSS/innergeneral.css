@@ -8,29 +8,32 @@
 /*==========START=================*/
 
 body {
-    background-color: #ebebeb;
+    background-color: #D9D6D5;
 }
 
 a {
-    color: #D5CFCD;
+    color: #D9D6D5;
     text-decoration: none;
 }
 
 a:hover,
 a:focus {
-    color:#8A3A49;
+    color:#6B2D1F;
 }
 
 /*===============HEADER==============*/
 
 .header {
     width:100%;
-    height: 5em;
-    background-color: #260F07;
+    height: 90px;
+    background-color: #301506;
 }
 
 .profileimg {
-    padding-top: 2em;
+    margin-top: .5em;
+    margin-left: .5em;
+    height: 75px;
+    float:left;
 }
 
 .logout {
@@ -40,7 +43,7 @@ a:focus {
 
 .logout button {
     padding: .15em;
-    background-color: #ebebeb;
+    background-color: #D9D6D5;
     border-radius: .5em;
     cursor: pointer;
 }
@@ -56,8 +59,8 @@ nav select {
     border-radius: .5em;
     padding: .35em;
     cursor: pointer;
-    background-color: darkgrey;
-    color: #260F07; 
+    background-color: #D9D6D5;
+    color: #301506; 
 
 }
 
@@ -74,7 +77,7 @@ nav option {
     margin-top: .1em;
     width: 65%;
     height: 4.7em;
-    background-color: #260F07;
+    background-color: #301506;
 
     
 }
@@ -105,7 +108,8 @@ nav option {
 /*==============MYHOME============*/
 
 .uploadimg {
-    margin-top: 5em;
+    margin-top: 2em;
+    margin-left: 1.5em;
 }
 
 

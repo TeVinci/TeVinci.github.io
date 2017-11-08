@@ -6,9 +6,9 @@ if (isset($_POST['submit'])) {
 
 	$uid = mysqli_real_escape_string($conn, $_POST['uid']);
 	$name = mysqli_real_escape_string($conn, $_POST['name']);
-	$passion_cat1 = mysqli_real_escape_string($conn, $_POST['passion_cat1']);
-	$passion_cat2 = mysqli_real_escape_string($conn, $_POST['passion_cat2']);
-	$passion_cat3 = mysqli_real_escape_string($conn, $_POST['passion_cat3']);
+	$passion1 = mysqli_real_escape_string($conn, $_POST['passion1']);
+	$passion2 = mysqli_real_escape_string($conn, $_POST['passion2']);
+	$passion3 = mysqli_real_escape_string($conn, $_POST['passion3']);
 	$Location = mysqli_real_escape_string($conn, $_POST['Location']);
 	$pwd = mysqli_real_escape_string($conn, $_POST['pwd']);
 	$conpwd = mysqli_real_escape_string($conn, $_POST['conpwd']);
@@ -40,7 +40,7 @@ if (isset($_POST['submit'])) {
 		header ("Location: ../signup.php?signup=pwdshort");
 		exit();
 	} 
-	elseif ($passion_cat1 == "please select a passion category" && $passion_cat2 == "please select a passion category" && $passion_cat3 == "please select a passion category") {
+	elseif ($passion1 == "please select" && $passion_cat2 == "please select" && $passion_cat3 == "please select") {
 		header ("Location: ../signup.php?signup=passionlow");
 		exit();
 	}
@@ -59,9 +59,17 @@ if (isset($_POST['submit'])) {
 				//hashing password
 				$hashedPwd = password_hash($pwd, PASSWORD_DEFAULT);
 				// insert into database
-				$sql = "INSERT INTO user (user_uid, user_name, user_passion1, user_passion2, user_passion3, user_pwd, profileimg,    user_signupdate) VALUES ('$uid', '$name', '$passion_cat1', '$passion_cat2', '$passion_cat3', '$hashedPwd', 'new', $date');";
+				
+
+				$sql = "INSERT INTO user (user_uid, user_name, user_passion1, user_passion2, user_passion3, user_pwd, user_signupdate) VALUES ('$uid', '$name', '$passion1', '$passion2', '$passion3', '$hashedPwd', '$date');";
+				
 				mysqli_query($conn, $sql);
-				header ("Location: ../signup2.php?signup=success");
+
+				session_start();
+
+				$_SESSION['user_uid'] = $uid;
+
+				header("Location: signup.login.inc.php");
 
 			}
 				

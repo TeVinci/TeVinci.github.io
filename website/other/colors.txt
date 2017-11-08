@@ -1,0 +1,9 @@
+
+
+colores
+	RED-BROWN
+
+	#D9D6D5 (grey)
+	#9C4D0C (lightbrown)
+	#5C2B0A (brown)
+	#301506 (darkbrown)

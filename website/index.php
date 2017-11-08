@@ -1,6 +1,6 @@
 
 <?php
-include 'outerheader.php';
+require ('inc/HF/outerheader.php');
 
 ?>
 	<div class='form-wrapper'>
@@ -22,5 +22,5 @@ include 'outerheader.php';
 
 
 <?php
-include 'outerfooter.php';
+require ('inc/HF/outerfooter.php');
 ?>

@@ -1,0 +1,244 @@
+
+
+@import url('https://fonts.googleapis.com/css?family=Inconsolata:400,700|Indie+Flower|Lato:300i,400,400i,700,700i,900,900i|Slabo+27px');
+
+* {
+	margin:0;
+	padding:0;
+}
+/*========Start============*/
+
+a {
+	text-decoration: none;
+	color: #301506;
+}
+
+a:hover,
+a:focus {
+	color: #6B2D1F;
+}
+
+body {
+	background: #D9D6D5;
+	font-family: 'Lato', sans-serif;
+	box-sizing: border-box;
+}
+
+
+header {
+	height: 5em;
+	width: 100%;
+	background-color: #301506;
+}
+
+
+
+.main-wrapper {
+	margin: 0 auto;
+	width: 95%;
+}
+
+
+
+
+.main-wrapper h2 {
+	padding-top: .5em;
+	padding-right: .5em;
+	float:left;
+	width: 3em;
+	font-family: 'Indie Flower', cursive;
+	font-size: 1.75em;
+	color: #D9D6D5;
+
+}
+#login-form {
+	float:right;
+	display: inline-block;
+	text-align: center;
+	margin-top: 1.75em;
+}
+
+.nav-login form input {
+	
+	height: 1.5em;
+	width: 10em;
+}
+
+.nav-login form button {
+	height: 1.65em;
+	margin-left: .75em;
+	width: 4em;
+	border-radius: .5em;
+	font-weight: bold;
+	
+}
+
+@media screen and (max-width: 530px){
+	#login-form {
+	float:right;
+	width: 10em;
+	margin-top: .25em;
+	text-align: right;
+	}
+
+	.nav-login form button {
+		margin-top:.2em;
+		width: 10.2em;
+
+	}
+
+	
+}
+
+
+
+.container {
+	width: 90%;
+	margin: 0 auto;
+}
+
+
+#logout {
+	float:right;
+	padding-top: 1.5em;
+}
+
+/*==============SignUp==============*/
+
+
+
+.signup_desc_wrapper {
+	float:left;
+	margin: 1em 0 1em 2.5vw;
+	width:45vw;
+	text-align: center;
+}
+
+.signup_desc h1 {
+	text-decoration: underline;
+	font-size: 1.5em;
+}
+
+.signup_desc p {
+	font-size: .8em;
+}
+
+.signup_desc span {
+	font-weight: bold;
+	font-size: 1em;
+}
+
+.signup_desc #namenotunique {
+	font-size: 1em;
+	font-weight: 400;
+	text-decoration: underline;
+}
+.form-wrapper {
+	width:15em;
+	float:right;
+	margin-right: 7.5vw;
+	margin-bottom: 1em;
+	
+}
+
+.signuptext {
+	font-family: 'Indie Flower', cursive;
+	width:100%;
+	font-size: 3em;
+	text-align: center;
+	margin: .3em auto ;
+	padding: .25;
+	float: right;
+	border-top-style: dotted;
+	border-radius: 1em;
+	border-width: .01em;
+}
+
+
+.signup-form input {
+	width: 20em;
+	height: 1.75em;
+	margin: .1em 0;
+	border-radius: .5em;
+	color: #5C2B0A;
+}
+
+.dropdown-wrapper {
+	width:16.5em;
+	text-align: center;
+	padding: 0;
+	margin: .3em 1em 2.3em 0;
+}
+
+
+.dropdown_cat {
+	width: .8em;
+	float:left;
+	border-style: solid;
+	border-width: .1em;
+	border-radius: .5em;
+	width: 20.3em;
+	height: 2.4em;
+}
+
+.dropdown_cat option {
+	background-color: #D9D6D5;
+	color: #301506;
+}
+
+
+
+.signup-form button{
+	width: 20.25em;
+	height: 3em;
+	margin-top: .25em;
+	text-align: center;
+	border-radius: 1em;
+	border-width: .15em;
+	background-color: #301506;
+	color: #D9D6D5;
+}
+
+.signup-form button:hover,
+.signup-form button:focus {
+	background-color: #9C4D0C;
+	color:#301506;
+}
+
+
+.signuperror {
+	text-align: center;
+	font-weight: bold;
+	font-family: 'Indie Flower', cursive;
+	font-size: 1.3em;
+	color: #5C2B0A;
+	text-decoration: underline;
+
+}
+
+.signuperror h6 {
+	font-size: .8em;
+
+
+
+}
+
+
+@media screen and (max-width: 570px){
+	.form-wrapper {
+			float:none;
+			margin: 0 auto;
+	}	
+
+	.signup_desc_wrapper {
+		float: none;
+		margin: 1em auto;
+		width:100%;
+	}
+
+	.main-container {
+		width: 95%;
+		margin: 0 auto;
+	}
+
+}

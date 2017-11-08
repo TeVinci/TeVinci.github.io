@@ -1,11 +1,8 @@
 <?php 
-	include '../HF/innerheader.php';
-
-
+	require ('../inc/HF/innerheader.php');
  ?>
 
- 
- <div class="uploadimg">
+<div class="uploadimg">
 	<form action="../inc/uploadimg.inc.php" method="POST" enctype="multipart/form-data">
 		<label for="UploadFileField"></label>
 		<input type="file" name="file" id="UploadFileField"/>
@@ -13,7 +10,14 @@
 		</button>
 	</form>
 </div>
+ 
 
- <?php
- include '../HF/innerfooter.php';
+ <?php 
+
+ 	require ('../inc/HF/innerfooter.php');
   ?>
+
+ 
+ 
+
+

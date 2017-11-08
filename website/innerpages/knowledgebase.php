@@ -1,9 +1,9 @@
 <?php 
-	include '../HF/innerheader.php'
+	require ('../inc/HF/innerheader.php');
  ?>
 
  
-</body>
+
  <?php 
- include '../HF/innerfooter.php'
+ 	require ('../inc/HF/innerfooter.php');
   ?>

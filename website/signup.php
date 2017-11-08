@@ -1,6 +1,6 @@
 
 <?php
-include 'outerheader.php';
+require ('inc/HF/outerheader.php');
 
 include_once 'inc/dbh.inc.php';
 
@@ -10,10 +10,14 @@ include_once 'inc/dbh.inc.php';
 	
 	<div class='form-wrapper'>
 			<div class="signuptext">
-				<a href="signup.php"><h2>SignUp</h2></a>
+				<h2>SignUp</h2>
 			</div>
-		<div class="error">
-			
+		<div class="signuperror">
+
+		<?php
+				require 'inc/signuperror.inc.php'
+			?>
+
 		</div>
 <br>
 		<form class='signup-form' action='inc/signup.inc.php' method='POST'>
@@ -21,8 +25,8 @@ include_once 'inc/dbh.inc.php';
 			<input type='text' name='name' placeholder='your Name'>
 			<div class="dropdown-wrapper">
 			
-			<select class="dropdown_cat" name='passion_cat1' id="passion1">
-				<option>please select a passion
+			<select class="dropdown_cat" name='passion1' id="passion1">
+				<option>please select
 				</option>
 				<?php
 					$res=mysqli_query($conn, "select * from passion_maincat");
@@ -38,8 +42,8 @@ include_once 'inc/dbh.inc.php';
 			</select>
 			<br><br>
 			
-			<select class="dropdown_cat" name='passion_cat2' id="passion2">
-				<option>please select a passion
+			<select class="dropdown_cat" name='passion2' id="passion2">
+				<option>please select
 				</option>
 				<?php
 					$res=mysqli_query($conn, "select * from passion_maincat");
@@ -53,8 +57,8 @@ include_once 'inc/dbh.inc.php';
 			</select>
 			<br><br>
 			
-			<select class="dropdown_cat" name='passion_cat3' id="passion3">
-				<option>please select a passion
+			<select class="dropdown_cat" name='passion3' id="passion3">
+				<option>please select
 				</option>
 				<?php
 					$res=mysqli_query($conn, "select * from passion_maincat");
@@ -77,13 +81,7 @@ include_once 'inc/dbh.inc.php';
 			<input type='password' name='conpwd' placeholder='Confirm Password'>
 			<button type='submit' name='submit'>SignUp</button><br />
 		</form><br>
-		<div class="signuperror">
-
-		<?php
-				require 'inc/signuperror.inc.php'
-			?>
-
-		</div>
+		
 	</div>
 	<div class="signup_desc_wrapper">
 		<div class="signup_desc">
@@ -92,11 +90,11 @@ include_once 'inc/dbh.inc.php';
 			<h4>Your new Identity</h4>
 <br>
 			<p><span>Be creative!</span><br>
-			This will be your unique identity, other users can find you by this identity.
+			This will be your unique identity, other users can directly find you by this identity.
 			</p>
 <br>
 			<h4>Your name</h4><br>
-			<p>The difference here is that your name <span id="namenotuniquie">does not have to be unique.</span></p> <p>It will also help other users to find your profile, but there may be more users with the same name.
+			<p>The difference here is that your name <span id="namenotunique">does not have to be unique.</span></p> <p>It will also help other users to find your profile, but there may be more users with the same name.
 			</p>
 <br>
 			<h4>Your passion</h4><br>
@@ -124,5 +122,5 @@ include_once 'inc/dbh.inc.php';
 </section>
 
 <?php
-include 'outerfooter.php';
+require ('inc/HF/outerfooter.php');
 ?>
