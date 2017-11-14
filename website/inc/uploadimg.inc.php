@@ -17,28 +17,39 @@
 		$allowed = array('jpg', 'jpeg', 'png', 'pdf');
 
 		$id = $_SESSION['user_id'];
-
-		if (in_array($fileActualExt, $allowed)) {
-			if ($fileError === 0) {
-				if ($fileSize < 1000000) {
-					include_once 'dbh.inc.php';
-					$fileNameNew = $id.".".$fileActualExt;
-					$fileDestination = '../innerpages/userimg/'.$fileNameNew;
-					move_uploaded_file($fileTmpName, $fileDestination);
-					$sql = "UPDATE user SET profileimg= '$fileActualExt' WHERE user_id = '$id';";
-					$result = mysqli_query($conn, $sql);
-					header("Location: ../innerpages/home.php?uploadsuccess");
-					
+		if (empty($fileName)) {
+			header("Location: ../innerpages/profilesettings.php?uploaderror=empty");
+			die();
+		}
+			elseif (in_array($fileActualExt, $allowed)) {
+				if ($fileError === 0) {
+					if ($fileSize < 100000000) {
+						include_once 'dbh.inc.php';
+						$fileNameNew = $id.".".$fileActualExt;
+						$fileDestination = '../innerpages/userimg/'.$fileNameNew;
+						move_uploaded_file($fileTmpName, $fileDestination);
+						$sql = "UPDATE user SET profileimg= '$fileActualExt' WHERE user_id = '$id';";
+						$result = mysqli_query($conn, $sql);
+						header("Location: ../innerpages/profilesettings.php?uploadsuccess");
+						die();
+						
+					}
+					else {
+						header ("Location: ../innerpages/profilesettings.php?uploaderror=size");
+						die();
+					}
 				}
 				else {
-					echo "The file is larger than 100mb";
+					header ("Location: ../innerpages/profilesettings.php?uploaderror=error");
+					die();
 				}
 			}
 			else {
-				echo "There was an error uploading this file";
+				header ("Location: ../innerpages/profilesettings.php?uploaderror=filetype");
+				die();
+				
 			}
-		}
-		else {
-			echo "You can only upload (jpg, jpeg, png, and pdf files.";
-		}
+	}
+	else {
+		header("Location: ../index.php");
 	}

@@ -34,11 +34,14 @@ include_once 'inc/dbh.inc.php';
 					{
 				?>
 				
-				<option value="<?php echo $row ['passionmain_name']; ?>"><?php echo $row ['passionmain_name']; ?>
+				<option value="<?php echo $row ['Name']; ?>">
+					<?php echo $row ['Name']; ?>
 				</option>
+		
 				<?php
 					}
 				?>
+					
 			</select>
 			<br><br>
 			
@@ -51,7 +54,7 @@ include_once 'inc/dbh.inc.php';
 					{
 				?>
 				<option>
-				<?php echo $row["passionmain_name"];?>
+				<?php echo $row["Name"];?>
 				</option>
 				<?php } ?>
 			</select>
@@ -66,7 +69,7 @@ include_once 'inc/dbh.inc.php';
 					{
 				?>
 				
-				<option><?php echo $row["passionmain_name"]; ?>
+				<option><?php echo $row["Name"]; ?>
 				</option>
 				<?php
 					}
@@ -79,7 +82,7 @@ include_once 'inc/dbh.inc.php';
 			<input type='text' name='Location' placeholder='Location'>
 			<input type='password' name='pwd' placeholder='Password (min. 6 characters)'>
 			<input type='password' name='conpwd' placeholder='Confirm Password'>
-			<button type='submit' name='submit'>SignUp</button><br />
+			<button type='submit' name='submit'>SignUp</button>
 		</form><br>
 		
 	</div>

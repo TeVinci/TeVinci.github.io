@@ -1,9 +1,13 @@
 
 
 colores
-	RED-BROWN
+	BROWN-ish
 
-	#D9D6D5 (grey)
-	#9C4D0C (lightbrown)
-	#5C2B0A (brown)
-	#301506 (darkbrown)
+	#301506 (darkbrown) Main
+	#492E1F (lightbrown) 2nd
+	#7C7572 (grey) 3rd
+	#332F29 (darkgrey)
+	#C9C0BF (lightgrey)
+	#5E290C (darkorange) 1st accent
+	#C95819 (lightorange) 2nd accent
+

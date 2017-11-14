@@ -46,27 +46,36 @@
 			}
 		?>
 		</div>
-		<div class="mywrapper">
-			<div class="mymenu">
-				<ul>
-					<li>
-						<a href="../innerpages/message.php">My Messages</a>
-					</li>
-					<li>
-						<a href="#">My Projects</a>
-					</li>
-					<li>
-						<a href="#">My Posts</a>
-					</li>
-					<li>
-						<a href="#">My files</a>
-					</li>
-					<li>
-						<a href="#">My Evaluations</a>
-					</li>
-				</ul>
+
+		<div class="friends">
+			
+			<form action="friends.php" method="POST">
+				<input type="text" name="search" placeholder="find friends">
+				<select id="search-by" name="search-by">
+					<option name="user_uid">
+						Identity
+					</option>
+					<option name="user_name">
+						Name
+					</option>
+				</select>
+				<button type="submit" name="submit">Search</button>
+			</form>
+
+		</div>
+
+		<div class="current-wrapper">
+			<div class="current">
+				<?php 
+					$url=$_SERVER['REQUEST_URI'];
+					$exp= explode("/", $url);
+					$end = end($exp);
+					$current = explode(".", $end);
+					echo ucfirst($current[0]);
+				 ?>	
 			</div>
 		</div>
+		
 		<div class="logout">
 			<form action='../inc/logout.inc.php' method='POST' id='logout'>
 				<button type='submit' name ='submit'>Logout</button>
@@ -107,6 +116,30 @@
 			</select>
 			
 		</nav>
+		<div class="mywrapper">
+			<div class="mymenu">
+				<ul>
+					<li>
+						<a href="../innerpages/profilesettings.php">Edit Profile</a>
+					</li>
+					<li>
+						<a href="#">My Messages</a>
+					</li>
+					<li>
+						<a href="#">My Projects</a>
+					</li>
+					<li>
+						<a href="#">My Posts</a>
+					</li>
+					<li>
+						<a href="#">My files</a>
+					</li>
+					<li>
+						<a href="#">My Evaluations</a>
+					</li>
+				</ul>
+			</div>
+		</div>
 	</div>
 	
 

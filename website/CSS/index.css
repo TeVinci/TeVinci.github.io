@@ -1,0 +1,78 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+#indextitle {
+	background-color: #5C2B0A;
+	color: #D9D6D5;
+	transform: translateX(-5em);
+	text-decoration: underline;
+	width: 30em;
+	font-size: 1.25em;
+	border-style: solid;
+	border-width: .1em;
+	border-radius: .75em;
+	padding: .65em .25em 0em .25em;
+	margin: 2em auto;
+	text-align: center;
+	
+}
+
+.welcome-wrapper {
+	color: #D9D6D5;
+	width: 100%;
+}
+
+.welcome-wrapper ul {
+	margin-left: 1em ;
+	padding: .25em;
+}
+
+.welcome-wrapper h4 {
+	margin-bottom: .5em;
+	text-decoration: underline;
+	text-align: center;
+}
+
+.welcome-wrapper div {
+	width: 85%;
+	margin: .5em auto;
+	border-style: none;
+	border-radius: .5em;
+}
+
+.welcome-wrapper li {
+	margin: .5em 0;
+}
+.welcome-wrapper {
+	display: grid;
+	grid-template-columns: 33% 33% 33%;
+	text-align: left;
+}
+
+.welcome-wrapper > div {
+	background-color: #301506;
+	padding: 1em;
+}
+
+@media screen and (max-width: 970px){
+
+	.welcome-wrapper {
+	display: grid;
+	grid-template-columns: 95%;
+	text-align: center;
+	}
+
+	.signuptext {
+		width: 100%;
+	}
+
+	#indextitle {
+		margin: 8em auto 1em auto;
+		transform: translateX(.25em);
+		height: 50px;
+		
+	}
+
+}
+

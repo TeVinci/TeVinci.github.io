@@ -8,58 +8,100 @@
 /*==========START=================*/
 
 body {
-    background-color: #D9D6D5;
+    background-color: #C9C0BF;
 }
 
 a {
-    color: #D9D6D5;
+    color: #C9C0BF;
     text-decoration: none;
 }
 
 a:hover,
 a:focus {
-    color:#6B2D1F;
+    color:#C95819;
 }
 
 /*===============HEADER==============*/
 
 .header {
+    position: fixed;
     width:100%;
     height: 90px;
     background-color: #301506;
 }
 
+
 .profileimg {
-    margin-top: .5em;
-    margin-left: .5em;
+    border-right-style: solid;
+    border-bottom-style: solid;
+    border-width: .15em;
+    border-color: #5E290C;
+    border-radius: .5em;
+    padding-bottom: .4em;
+    padding-top: .4em;
+    width: 200px;
+    text-align: center;
+    margin: 0 auto;
     height: 75px;
     float:left;
 }
 
+.friends {
+    position: absolute;
+    margin-top: 35px;
+    margin-left: 220px;
+}
+
+.current-wrapper {
+    position: absolute;
+    width: 200px;
+    right: 40%;
+    text-align: center;
+
+}
+
+.current {
+    text-decoration: underline;
+    letter-spacing: .05em;
+    color: #7C7572;
+    margin-top: .5em;
+    font-weight: bold;
+    font-size: 2.5em;
+
+}
+
+@media screen and (max-width: 700px){
+    .current-wrapper {
+        display: none;
+    }
+}
+
 .logout {
-     float:right;
+    float:right;
     margin: .5em .5em 0 0 
 }
 
 .logout button {
     padding: .15em;
-    background-color: #D9D6D5;
+    background-color: #C9C0BF;
     border-radius: .5em;
     cursor: pointer;
 }
 
 nav {
+
    float: right;
-   margin-top: 2.75em;
-   transform: translateX(-3.5em);
+   margin-top: 2.5em;
+   transform: translateX(-5em);
 
 }
 
 nav select {
+
     border-radius: .5em;
     padding: .35em;
     cursor: pointer;
-    background-color: #D9D6D5;
+    background-color: #C9C0BF;
     color: #301506; 
 
 }
@@ -67,52 +109,110 @@ nav select {
 nav option {
     padding: .75em;
     cursor: pointer;
-    border-style: none;
+   
 }
 
 
 
 .mywrapper {
-    float: left;
-    margin-top: .1em;
-    width: 65%;
-    height: 4.7em;
+    position: fixed;
+    margin-top: 90px;
+    left: 0;
+    width: 200px;
+    height: 100%;
     background-color: #301506;
-
     
-}
-
-.mymenu {
-    text-align: center;
-
 }
 
 .mymenu ul {
-    
+    padding-top: .4em;
+    text-align: left;
 }
 
 
 .mymenu li {
-    display: inline-block;
+
     list-style: none;
-    margin: 1.25em 0 0 3vw;
+    margin: 1.25em 2em;
     font-size: 1.2em;
 }
 
-@media screen and (max-width: 980px){
-    .mywrapper {
-        display: none;
-    }
-}
 
 /*==============MYHOME============*/
 
+
+
+/*========Profilesetting===========*/
+
 .uploadimg {
-    margin-top: 2em;
-    margin-left: 1.5em;
+    padding-top: 110px;
+    margin: 1em auto;
+ 
 }
 
+.uploadimg form {
+    text-align: center;
+}
 
+.uploadimg h5 {
+    text-align: center;
+    font-size: 1.5em;
+}
 
+.uploadimgerror {
+    text-decoration: underline;
+    text-align: center;
+    margin: .5em auto;
+    font-weight: bold;
+    color: #5E290C;
+
+}
+
+.profileimg1 {
+    width: 200px;
+    margin: .5em auto;
+}
+
+.passions {
+    width: 200px;
+    margin-left: 500px;
+    
+}
+
+.passions h5 {
+    text-align: center;
+    font-size: 1.5em;
+    margin: .5em auto;
+}
+
+.passions select {
+    width: 200px;
+    height: 2em;
+    border-radius: .5em;
+    margin: .25em auto;
+  
+}
+
+.passions button {
+    background-color: #5E290C;
+    color: #C9C0BF;
+    width: 200px;
+    margin: .25em auto;
+    border-radius: .5em;
+    height: 2.5em;
+}
+
+.passions button:hover,
+.passions button:focus {
+    background-color: #C95819;
+    color:#301506;
+}
+
+/*=================FRIENDS================*/
+
+.results {
+    margin-left: 220px;
+    margin-top: 100px;
+}
 
 

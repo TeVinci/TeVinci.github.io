@@ -15,11 +15,11 @@ a {
 
 a:hover,
 a:focus {
-	color: #6B2D1F;
+	color: #5E290C;
 }
 
 body {
-	background: #D9D6D5;
+	background: #C9C0BF;
 	font-family: 'Lato', sans-serif;
 	box-sizing: border-box;
 }
@@ -59,7 +59,7 @@ header {
 }
 
 .nav-login form input {
-	
+	background: #C9C0BF;
 	height: 1.5em;
 	width: 10em;
 }
@@ -134,7 +134,7 @@ header {
 	text-decoration: underline;
 }
 .form-wrapper {
-	width:15em;
+	width:220px;
 	float:right;
 	margin-right: 7.5vw;
 	margin-bottom: 1em;
@@ -143,24 +143,29 @@ header {
 
 .signuptext {
 	font-family: 'Indie Flower', cursive;
-	width:100%;
+	width:3.5em;
+	float:right;
 	font-size: 3em;
-	text-align: center;
-	margin: .3em auto ;
-	padding: .25;
+	margin: 0 auto;
+	padding: .5em 1em;
 	float: right;
-	border-top-style: dotted;
-	border-radius: 1em;
-	border-width: .01em;
 }
 
+@media screen and (max-width: 600px){
+	.signuptext {
+		width:100%;
+		float: none;
+		margin: 0 auto;
+		transform: translateX(-1em);
+	}
+}
 
 .signup-form input {
-	width: 20em;
+	width: 220px;
 	height: 1.75em;
-	margin: .1em 0;
+	margin: .25em 0;
 	border-radius: .5em;
-	color: #5C2B0A;
+	color: #301506 ;
 }
 
 .dropdown-wrapper {
@@ -172,36 +177,36 @@ header {
 
 
 .dropdown_cat {
-	width: .8em;
+	width: 225px;
 	float:left;
 	border-style: solid;
 	border-width: .1em;
 	border-radius: .5em;
-	width: 20.3em;
 	height: 2.4em;
 }
 
 .dropdown_cat option {
-	background-color: #D9D6D5;
+	background-color: #C9C0BF;
 	color: #301506;
 }
 
 
 
 .signup-form button{
-	width: 20.25em;
+	font-weight: bold;
+	width: 220px;
 	height: 3em;
 	margin-top: .25em;
 	text-align: center;
 	border-radius: 1em;
 	border-width: .15em;
-	background-color: #301506;
-	color: #D9D6D5;
+	background-color: #5E290C;
+	color: #C9C0BF;
 }
 
 .signup-form button:hover,
 .signup-form button:focus {
-	background-color: #9C4D0C;
+	background-color: #C95819;
 	color:#301506;
 }
 
@@ -211,7 +216,7 @@ header {
 	font-weight: bold;
 	font-family: 'Indie Flower', cursive;
 	font-size: 1.3em;
-	color: #5C2B0A;
+	color: #C95819;
 	text-decoration: underline;
 
 }
