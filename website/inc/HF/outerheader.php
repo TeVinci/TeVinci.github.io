@@ -8,7 +8,6 @@ if (isset($_SESSION['u_id'])) {
 	header ("Location: innerpages/MyHome.php");
 	die();
 }
-
 ?>	
 <!DOCTYPE html>
 <html lang="en">
@@ -19,6 +18,7 @@ if (isset($_SESSION['u_id'])) {
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link href="CSS/outergeneral.css" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" type="text/css" href="CSS/index.css">
 
 </head>
 
@@ -39,4 +39,5 @@ if (isset($_SESSION['u_id'])) {
 			</div>
 		</nav>
 	</header>
+
 	

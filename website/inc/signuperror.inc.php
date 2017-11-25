@@ -1,22 +1,10 @@
-<?php
-	
-?>
 
-<!DOCTYPE html>
-<html>
-<head>
-	<title>signuperror</title>
 
-	<link href="../CSS/styleslogin.css" type="text/css" rel="stylesheet">
-</head>
-
-</html>
 <?php
 
 	
 	
-	if (isset($_SESSION['user_id'])) {
-		include 'dbh.inc.php';
+	
 
 		if (@$_GET['signup'] == "empty") {
 			echo "<h5>please fill in all fields</h5>";
@@ -48,9 +36,7 @@
 		elseif (@$_GET['signup'] == "success") {
 			echo "<h5>you are successfully registered, please login</h5>";
 		}
-	}
-	else {
-		header("Location: ../index.php");
-	}
+	
+	
 		
 

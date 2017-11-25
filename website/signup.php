@@ -1,6 +1,6 @@
 
 <?php
-require ('inc/HF/outerheader.php');
+require 'inc/HF/outerheader.php';
 
 include_once 'inc/dbh.inc.php';
 
@@ -15,7 +15,7 @@ include_once 'inc/dbh.inc.php';
 		<div class="signuperror">
 
 		<?php
-				require 'inc/signuperror.inc.php'
+				include 'inc/signuperror.inc.php'
 			?>
 
 		</div>
