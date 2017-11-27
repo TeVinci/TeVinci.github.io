@@ -7,6 +7,7 @@ This task is not easy and will ask for a lot of passion!
 <h4>please also check: https://cospace.000webhostapp.com (the current version of the platform in action)<br>
 and https://tevinci.github.io/.</h4>
 
+<h2>HOW to Contribute?</h2>
 
 <h4>First thank you for taking into consideration to contribute to that project.</h4>
 <h6>Only with people like you we will be able to success in such a big project.</h6> 
