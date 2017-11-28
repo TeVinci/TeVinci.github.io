@@ -7,7 +7,7 @@ include_once 'inc/dbh.inc.php';
 ?>
 
 <section class='main-container'>
-	
+
 	<div class='form-wrapper'>
 			<div class="signuptext">
 				<h2>SignUp</h2>
@@ -19,12 +19,12 @@ include_once 'inc/dbh.inc.php';
 			?>
 
 		</div>
-<br>
+
 		<form class='signup-form' action='inc/signup.inc.php' method='POST'>
 			<input type='text' name='uid' placeholder='your new Identity'>
 			<input type='text' name='name' placeholder='your Name'>
 			<div class="dropdown-wrapper">
-			
+
 			<select class="dropdown_cat" name='passion1' id="passion1">
 				<option>please select
 				</option>
@@ -33,18 +33,18 @@ include_once 'inc/dbh.inc.php';
 					while($row=mysqli_fetch_array($res))
 					{
 				?>
-				
+
 				<option value="<?php echo $row ['Name']; ?>">
 					<?php echo $row ['Name']; ?>
 				</option>
-		
+
 				<?php
 					}
 				?>
-					
+
 			</select>
-			<br><br>
-			
+	
+
 			<select class="dropdown_cat" name='passion2' id="passion2">
 				<option>please select
 				</option>
@@ -58,8 +58,8 @@ include_once 'inc/dbh.inc.php';
 				</option>
 				<?php } ?>
 			</select>
-			<br><br>
-			
+
+
 			<select class="dropdown_cat" name='passion3' id="passion3">
 				<option>please select
 				</option>
@@ -68,23 +68,23 @@ include_once 'inc/dbh.inc.php';
 					while($row=mysqli_fetch_array($res))
 					{
 				?>
-				
+
 				<option><?php echo $row["Name"]; ?>
 				</option>
 				<?php
 					}
 				?>
-				
-				
+
+
 			</select>
-				
+
 			</div>
 			<input type='text' name='Location' placeholder='Location'>
 			<input type='password' name='pwd' placeholder='Password (min. 6 characters)'>
 			<input type='password' name='conpwd' placeholder='Confirm Password'>
 			<button type='submit' name='submit'>SignUp</button>
 		</form><br>
-		
+
 	</div>
 	<div class="signup_desc_wrapper">
 		<div class="signup_desc">
@@ -121,7 +121,7 @@ include_once 'inc/dbh.inc.php';
 			<span>Just use at least 6 characters</span>
 		</div>
 	</div>
-	
+
 </section>
 
 <?php

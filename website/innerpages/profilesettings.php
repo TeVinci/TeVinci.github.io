@@ -1,4 +1,4 @@
-<?php 
+<?php
 	require ('../inc/HF/innerheader.php');
  ?>
 
@@ -8,15 +8,15 @@
  	<div class="profileimg1">
 			<?php
 			$id = $_SESSION['user_id'];
-			$sql = "SELECT profileimg FROM user WHERE user_id='$id'";
+			$sql = "SELECT user_img FROM user WHERE user_id='$id'";
 			$result = mysqli_query($conn, $sql);
-			
+
 			if (mysqli_num_rows($result) > 0) {
 
-				while ($row = mysqli_fetch_assoc($result)) {
-					$profileimg = $row['profileimg'];
+					$row = mysqli_fetch_assoc($result);
+					$profileimg = $row['user_img'];
 					$destination = $id.".".$profileimg;
-		 			
+
 		 			if ($profileimg == 'new') {
 
 		 				echo "<div id='profileimg'>";
@@ -24,13 +24,13 @@
 						echo "</div>";
 					}
 					else {
-						
+
 						echo "<div id='profileimg'>";
 						echo "<img height='100px' src='../innerpages/userimg/".$destination."'>";
 						echo "</div>";
 					}
-				}
-				
+
+
 			}
 		?>
 	</div>
@@ -46,7 +46,7 @@
 		require ('../inc/uploadimg.error.inc.php');
 		?>
 	</div>
-	
+
 </div>
 
 <div class="passions">
@@ -74,11 +74,11 @@
 					while($row=mysqli_fetch_array($res))
 					{
 				?>
-				
+
 		<option value="<?php echo $row ['Name']; ?>">
 					<?php echo $row ['Name']; ?>
 		</option>
-		
+
 				<?php
 					}
 				?>
@@ -105,11 +105,11 @@
 					while($row=mysqli_fetch_array($res))
 					{
 				?>
-				
+
 				<option value="<?php echo $row ['Name']; ?>">
 					<?php echo $row ['Name']; ?>
 				</option>
-		
+
 				<?php
 					}
 				?>
@@ -136,11 +136,11 @@
 					while($row=mysqli_fetch_array($res))
 					{
 				?>
-				
+
 				<option value="<?php echo $row ['Name']; ?>">
 					<?php echo $row ['Name']; ?>
 				</option>
-		
+
 				<?php
 					}
 				?>
@@ -167,11 +167,11 @@
 					while($row=mysqli_fetch_array($res))
 					{
 				?>
-				
+
 				<option value="<?php echo $row ['Name']; ?>">
 					<?php echo $row ['Name']; ?>
 				</option>
-		
+
 				<?php
 					}
 				?>
@@ -198,11 +198,11 @@
 					while($row=mysqli_fetch_array($res))
 					{
 				?>
-				
+
 				<option value="<?php echo $row ['Name']; ?>">
 					<?php echo $row ['Name']; ?>
 				</option>
-		
+
 				<?php
 					}
 				?>
@@ -211,7 +211,7 @@
 	</form>
 </div>
 
- <?php 
+ <?php
 
  	require ('../inc/HF/innerfooter.php');
   ?>

@@ -2,7 +2,7 @@
 require ('inc/HF/outerheader.php');
 ?>
 
-	<div class="signuptext">
+	<div class="signuptext-index">
 		<a href="signup.php"><h2>SignUp</h2></a>
 	</div>
 
@@ -12,7 +12,7 @@ require ('inc/HF/outerheader.php');
 	</div>
 
 	<div class="welcome-wrapper">
-		
+
 		<div id="welcome-what">
 		<h4>What is it?</h4>
 
@@ -25,7 +25,7 @@ require ('inc/HF/outerheader.php');
 						<li>host and share your projects</li>
 						<li>host, share and review files</li>
 						<li>give and get -knowledge, -ideas, and -passion</li>
-						<li>do what you always wanted to do</li>					
+						<li>do what you always wanted to do</li>
 					</ul>
 			</ul>
 		</div>
@@ -55,7 +55,7 @@ require ('inc/HF/outerheader.php');
 				<li>
 					This is a basic-platform, which makes collaboration possible
 				</li>
-					
+
 				<li>It gives you the opportunity to specify your passions (what makes you get out of bed without any external pressure), and create projects, or collaborate on projects of others. </li>
 				<li>
 					This is hopefully only the start of a long journey of human kind towards global collaboration.

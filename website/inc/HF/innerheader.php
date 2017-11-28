@@ -1,7 +1,7 @@
 <?php
 	session_start();
-	
-	
+
+
 	if (isset($_SESSION['user_id'])) {
 		include '../inc/dbh.inc.php';
 ?>
@@ -20,15 +20,15 @@
 		<div class="profileimg">
 			<?php
 			$id = $_SESSION['user_id'];
-			$sql = "SELECT profileimg FROM user WHERE user_id='$id'";
+			$sql = "SELECT user_img FROM user WHERE user_id='$id'";
 			$result = mysqli_query($conn, $sql);
-			
+
 			if (mysqli_num_rows($result) > 0) {
 
 				while ($row = mysqli_fetch_assoc($result)) {
-					$profileimg = $row['profileimg'];
+					$profileimg = $row['user_img'];
 					$destination = $id.".".$profileimg;
-		 			
+
 		 			if ($profileimg == 'new') {
 
 		 				echo "<div id='profileimg'>";
@@ -36,19 +36,19 @@
 						echo "</div>";
 					}
 					else {
-						
+
 						echo "<div id='profileimg'>";
 						echo "<img height='75px' src='../innerpages/userimg/".$destination."'>";
 						echo "</div>";
 					}
 				}
-				
+
 			}
 		?>
 		</div>
 
 		<div class="friends">
-			
+
 			<form action="friends.php" method="POST">
 				<input type="text" name="search" placeholder="find friends">
 				<select id="search-by" name="search-by">
@@ -66,26 +66,26 @@
 
 		<div class="current-wrapper">
 			<div class="current">
-				<?php 
+				<?php
 					$url=$_SERVER['REQUEST_URI'];
 					$exp= explode("/", $url);
 					$end = end($exp);
 					$current = explode(".", $end);
 					echo ucfirst($current[0]);
-				 ?>	
+				 ?>
 			</div>
 		</div>
-		
+
 		<div class="logout">
 			<form action='../inc/logout.inc.php' method='POST' id='logout'>
 				<button type='submit' name ='submit'>Logout</button>
 			</form>
 		</div>
 		<nav>
-		
+
 			<select class="headernav" onchange="location.href=this.options[this.selectedIndex].value;" placeholder="">
 				<option>
-					<?php 
+					<?php
 						$url=$_SERVER['REQUEST_URI'];
 						$exp= explode("/", $url);
 						$end = end($exp);
@@ -100,21 +100,21 @@
 							$site = $sites[$i];
 							$cur = ucfirst($current[0]);
 
-							if ($site != $cur) 
+							if ($site != $cur)
 							{
 					?>
 				<option value="<?php echo $site.'.php';?>">
-					<a href="<?php echo $site.'.php';?>"> 
+					<a href="<?php echo $site.'.php';?>">
 						<?php echo $site;
 						 ?></a>
 				</option>
-					<?php 
+					<?php
 							}
 						}
 					 ?>
-				
+
 			</select>
-			
+
 		</nav>
 		<div class="mywrapper">
 			<div class="mymenu">
@@ -141,7 +141,7 @@
 			</div>
 		</div>
 	</div>
-	
+
 
 <?php
 } else {

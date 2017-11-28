@@ -2,13 +2,11 @@
 
 session_start();
 
-
-if (isset($_SESSION['u_id'])) {
-	include 'inc/dbh.inc.php';
-	header ("Location: innerpages/MyHome.php");
+if (isset($_SESSION['user_id'])) {
+	header ("Location: innerpages/Home.php");
 	die();
 }
-?>	
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -23,7 +21,7 @@ if (isset($_SESSION['u_id'])) {
 </head>
 
 <body>
-	
+
 	<header>
 		<nav>
 			<div class="main-wrapper">
@@ -34,10 +32,8 @@ if (isset($_SESSION['u_id'])) {
 						<input type="password" name="pwd" placeholder="password">
 						<Button type="submit" name="submit">Login</Button>
 					</form>
-		
+
 				</div>
 			</div>
 		</nav>
 	</header>
-
-	

@@ -70,7 +70,7 @@ header {
 	width: 4em;
 	border-radius: .5em;
 	font-weight: bold;
-	
+
 }
 
 @media screen and (max-width: 530px){
@@ -87,7 +87,7 @@ header {
 
 	}
 
-	
+
 }
 
 
@@ -102,6 +102,89 @@ header {
 	float:right;
 	padding-top: 1.5em;
 }
+
+/*===========Index=================*/
+
+.signuptext-index {
+	margin: 0 2em;
+	padding: .5em .5em;
+	float: right;
+	font-family: 'Indie Flower', cursive;
+	font-size: 3em;
+}
+
+#indextitle {
+	color: #301506;
+	width: 30em;
+	font-size: 1.5em;
+	padding: .65em .25em 0em .25em;
+	margin: 2em auto;
+	text-align: center;
+
+}
+
+#indextitle span {
+	text-decoration: underline;
+}
+
+.welcome-wrapper {
+	color: #D9D6D5;
+	width: 100%;
+}
+
+.welcome-wrapper ul {
+	margin-left: 1em ;
+	padding: .25em;
+}
+
+.welcome-wrapper h4 {
+	margin-bottom: .5em;
+	text-decoration: underline;
+	text-align: center;
+}
+
+.welcome-wrapper div {
+	width: 85%;
+	margin: .5em auto;
+	border-style: none;
+	border-radius: .5em;
+}
+
+.welcome-wrapper li {
+	margin: .5em 0;
+}
+.welcome-wrapper {
+	display: grid;
+	grid-template-columns: 33% 33% 33%;
+	text-align: left;
+}
+
+.welcome-wrapper > div {
+	background-color: #301506;
+	padding: 1em;
+}
+
+@media screen and (max-width: 970px){
+
+	.welcome-wrapper {
+	display: grid;
+	grid-template-columns: 95%;
+	text-align: center;
+	}
+
+	.signuptext {
+		width: 100%;
+	}
+
+	#indextitle {
+		margin: 8em auto 1em auto;
+		transform: translateX(.25em);
+		height: 50px;
+
+	}
+
+}
+
 
 /*==============SignUp==============*/
 
@@ -134,55 +217,69 @@ header {
 	text-decoration: underline;
 }
 .form-wrapper {
-	width:220px;
+	width:30vw;
 	float:right;
 	margin-right: 7.5vw;
 	margin-bottom: 1em;
-	
+
 }
 
 .signuptext {
 	font-family: 'Indie Flower', cursive;
-	width:3.5em;
-	float:right;
 	font-size: 3em;
-	margin: 0 auto;
-	padding: .5em 3em .5em 1em;
-	float: right;
+	text-align: center;
+
 }
 
+@media screen and (max-width:970px){
+	.form-wrapper {
+		width:35vw;
+		float:right;
+		margin-right: 7.5vw;
+		margin-bottom: 1em;
+
+	}
+}
 @media screen and (max-width: 600px){
 	.signuptext {
 		width:100%;
 		float: none;
 		margin: 0 auto;
-		transform: translateX(-1em);
+	}
+
+	.form-wrapper {
+		width:95%;
+		float:none;
+		margin: 0 auto;
+
 	}
 }
 
+.signup-form {
+	margin-top: 1em;
+}
+
 .signup-form input {
-	width: 220px;
+	width: 99%;
 	height: 1.75em;
-	margin: .25em 0;
+	margin: .25em auto;
 	border-radius: .5em;
 	color: #301506 ;
 }
 
 .dropdown-wrapper {
-	width:16.5em;
+	width:100%;
 	text-align: center;
 	padding: 0;
-	margin: .3em 1em 2.3em 0;
+	margin: .1em auto;
 }
 
 
 .dropdown_cat {
-	width: 225px;
-	float:left;
-	border-style: solid;
-	border-width: .1em;
+	width: 100%;
+	margin: .2em auto;
 	border-radius: .5em;
-	height: 2.4em;
+	height: 2.3em;
 }
 
 .dropdown_cat option {
@@ -194,7 +291,7 @@ header {
 
 .signup-form button{
 	font-weight: bold;
-	width: 220px;
+	width: 100%;
 	height: 3em;
 	margin-top: .25em;
 	text-align: center;
@@ -233,7 +330,7 @@ header {
 	.form-wrapper {
 			float:none;
 			margin: 0 auto;
-	}	
+	}
 
 	.signup_desc_wrapper {
 		float: none;
