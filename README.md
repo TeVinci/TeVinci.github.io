@@ -4,6 +4,8 @@ building an opensource collaboration-tool for everyone: decentralizing productiv
 The goal of this project is to create a platform which makes global collaboration possible. <br>
 This task is not easy and will ask for a lot of passion!
 
+This is hopefully the beginning of a decentralized, and open-source based society, which is not build upon traditional money, but rather upon the people in it, Those who really make the future!
+
 <h4>please also check: https://cospace.000webhostapp.com (the current version of the platform in action)<br>
 and https://tevinci.github.io/.</h4>
 
@@ -13,7 +15,9 @@ and https://tevinci.github.io/.</h4>
 <h6>Only with people like you we will be able to success in such a big project.</h6> 
 <br>
 
-The platform which will be created here is ment to belong to it's users, that means: any contributer will have the same influence on the project.<br> 
+The platform which will be created here is ment to belong to it's users,
+
+that means: <u>any contributer will have the same power to influence the project</u>.<br> 
 <h5>Thus, if you want to be creative and share youre ideas, please do so!!!</h5>
 
 <h3>Currently we are working on the following main tasks</h3>
